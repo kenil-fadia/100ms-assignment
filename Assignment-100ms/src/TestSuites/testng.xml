@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Amazon Assignment Suite" parallel="classes"
+       thread-count="2">
+    <test name="Assignment">
+        <parameter name="myBrowser" value="chrome" />
+        <parameter name="mode" value="gui" />
+        <parameter name="resolution" value="laptop" />
+        <parameter name="env" value="prod" />
+        <classes>
+            <class name="org.ms100.tests.ConferencePageTests" />
+        </classes>
+    </test>
+</suite>
